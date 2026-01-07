@@ -1,4 +1,5 @@
-# Reverse a Singly Linked List in Python
+# Reverse a Singly Linked List
+# This program demonstrates reversing a linked list using an iterative approach
 
 class Node:
     def __init__(self, data):
@@ -45,4 +46,18 @@ if __name__ == "__main__":
     ll.append(1)
     ll.append(2)
     ll.append(3)
-    ll.append(4
+    ll.append(4)
+    print("Original Linked List:")
+    ll.print_list()
+
+    ll.reverse()
+
+    print("Reversed Linked List:")
+    ll.print_list()
+
+
+# Time Complexity:
+# reverse() -> O(n) where n is number of nodes
+
+# Space Complexity:
+# O(1) since reversal is done in-place
