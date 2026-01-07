@@ -1,4 +1,5 @@
-# Singly Linked List in Python
+# Implementation of Singly Linked List
+# Each node contains data and a reference to the next node
 
 class Node:
     def __init__(self, data):
@@ -36,3 +37,10 @@ if __name__ == "__main__":
     ll.append(30)
     print("Linked List:")
     ll.print_list()
+
+# Time Complexity:
+# append() -> O(n) because we traverse the list
+# print_list() -> O(n)
+
+# Space Complexity:
+# O(1) extra space (excluding the linked list storage)
