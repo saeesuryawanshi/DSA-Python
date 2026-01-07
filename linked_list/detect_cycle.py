@@ -1,4 +1,8 @@
 # Detect Cycle in a Singly Linked List using Floyd's Tortoise and Hare Algorithm
+# Approach:
+# - Use two pointers (slow and fast)
+# - Slow moves one step, fast moves two steps
+# - If a cycle exists, they will meet
 
 class Node:
     def __init__(self, data):
@@ -36,6 +40,10 @@ class LinkedList:
 
     # Detect cycle
     def has_cycle(self):
+    """
+    Detects whether the linked list contains a cycle
+    using Floyd's Tortoise and Hare algorithm
+    """
         slow = self.head
         fast = self.head
         while fast and fast.next:
@@ -60,3 +68,9 @@ if __name__ == "__main__":
         print("Cycle detected in the linked list")
     else:
         print("No cycle detected")
+
+# Time Complexity:
+# O(n) where n is the number of nodes
+
+# Space Complexity:
+# O(1) since no extra space is used
