@@ -2,7 +2,7 @@
 # Repeatedly compares adjacent elements and swaps them if they are in wrong order
 
 def bubble_sort(arr):
-# In-place sorting without using extra space
+    # In-place sorting without using extra space
     n = len(arr)
     for i in range(n):
         # Flag to detect if any swap happens
@@ -25,9 +25,9 @@ if __name__ == "__main__":
     print("Sorted array:", arr)
 
 # Time Complexity:
-# Best Case: O(n)  (already sorted)
+# Best Case: O(n)
 # Average Case: O(n^2)
 # Worst Case: O(n^2)
 
 # Space Complexity:
-# O(1) (in-place sorting)
+# O(1)
