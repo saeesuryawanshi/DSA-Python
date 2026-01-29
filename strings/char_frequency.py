@@ -7,10 +7,7 @@ def char_frequency(s):
     for ch in s:
         if ch == " ":
             continue   # ignore spaces
-        if ch in freq:
-            freq[ch] += 1
-        else:
-            freq[ch] = 1
+        freq[ch] = freq.get(ch, 0) + 1
 
     return freq
 
