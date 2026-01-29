@@ -15,3 +15,6 @@ if is_palindrome_manual(s):
     print(f'"{s}" is a palindrome')
 else:
     print(f'"{s}" is not a palindrome')
+
+# Time Complexity: O(n)
+# Space Complexity: O(1)
